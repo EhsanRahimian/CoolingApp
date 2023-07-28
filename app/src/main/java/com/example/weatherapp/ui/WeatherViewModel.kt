@@ -150,7 +150,7 @@ constructor(
     // Method to fetch weather based on usa city search
     fun searchWeather(city: String) {
         val trimmedCity = city.trim()
-        if (trimmedCity.trim().isNotEmpty()) {
+        if (trimmedCity.isNotEmpty()) {
             viewModelScope.launch {
                 _weatherData.value = DataState.Empty
                 _weatherData.value = DataState.Loading
