@@ -149,14 +149,15 @@ constructor(
 
     // Method to fetch weather based on usa city search
     fun searchWeather(city: String) {
-        if (city.trim().isNotEmpty()) {
+        val trimmedCity = city.trim()
+        if (trimmedCity.trim().isNotEmpty()) {
             viewModelScope.launch {
                 _weatherData.value = DataState.Empty
                 _weatherData.value = DataState.Loading
 
                 try {
                     // Fetch weather data for the searched city
-                    val weatherResponse = repository.getWeatherByCity(city)
+                    val weatherResponse = repository.getWeatherByCity(trimmedCity)
                     val latitude = weatherResponse.coord?.lat ?: 0.0
                     val longitude = weatherResponse.coord?.lon ?: 0.0
                     // Update latitude and longitude in ViewModel
