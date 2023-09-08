@@ -1,5 +1,5 @@
-# WeatherApp
-This is a minimalistic weather app that provides real-time weather information for locations in the United States. With this app, you can effortlessly check the weather in any US city by either searching for the city or granting location permission to fetch weather data based on your current location.
+# Cooling App
+This is a minimalistic cooling app that provides real-time weather information for locations in the United States. With this app, you can effortlessly check the weather in any US city by either searching for the city or granting location permission to fetch weather data based on your current location.
 
 To use the app, you need to get an API key from the OpenWeatherMap website (https://openweathermap.org/) and then follow these steps:
 
